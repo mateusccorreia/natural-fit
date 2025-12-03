@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/natural-fit/sw.js', { scope: '/natural-fit/' })})}
