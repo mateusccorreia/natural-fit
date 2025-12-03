@@ -1,0 +1,9 @@
+src/components/SmartWorkoutPlan/EquipmentSelector.tsx(2,32): error TS2459: Module '"../../context/SmartWorkoutContext"' declares 'Equipment' locally, but it is not exported.
+src/components/SmartWorkoutPlan/ExperienceSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/InjuriesSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/LevelSelector.tsx(2,32): error TS2459: Module '"../../context/SmartWorkoutContext"' declares 'Level' locally, but it is not exported.
+src/components/SmartWorkoutPlan/LimitationsSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/MuscleFocusSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/MuscleFocusSelector.tsx(2,10): error TS6133: 'Focus' is declared but its value is never read.
+src/components/SmartWorkoutPlan/PreferencesSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/pages/WorkoutGenerator.tsx(6,1): error TS6133: 'LevelSelector' is declared but its value is never read.

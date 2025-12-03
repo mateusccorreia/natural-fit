@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { useSmartWorkout } from '../../context/SmartWorkoutContext';
-import { Clock, Repeat, Dumbbell, AlertCircle, Calendar, Info } from 'lucide-react';
-import { ProgressionEngine } from './ProgressionEngine';
-import { DeloadSuggestion } from './DeloadSuggestion';
+import { Repeat, Dumbbell, AlertCircle, Calendar, Info } from 'lucide-react';
 import clsx from 'clsx';
 
 export function WorkoutPreview() {

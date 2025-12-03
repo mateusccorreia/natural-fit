@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThumbsUp, Zap } from 'lucide-react';
 import { useSmartWorkout } from '../../context/SmartWorkoutContext';
 import clsx from 'clsx';

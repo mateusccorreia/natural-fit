@@ -1,5 +1,6 @@
 import { Dumbbell, Building2, Activity, User } from 'lucide-react';
-import { useSmartWorkout, type Equipment } from '../../context/SmartWorkoutContext';
+import { useSmartWorkout } from '../../context/SmartWorkoutContext';
+import type { Equipment } from '../../types/workout';
 import clsx from 'clsx';
 
 export function EquipmentSelector() {

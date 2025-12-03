@@ -3,7 +3,6 @@ import { SmartWorkoutProvider, useSmartWorkout } from '../context/SmartWorkoutCo
 import { GenderSelector } from '../components/SmartWorkoutPlan/GenderSelector';
 import { BiometricsSelector } from '../components/SmartWorkoutPlan/BiometricsSelector';
 import { GoalSelector } from '../components/SmartWorkoutPlan/GoalSelector';
-import { LevelSelector } from '../components/SmartWorkoutPlan/LevelSelector';
 import { FrequencySelector } from '../components/SmartWorkoutPlan/FrequencySelector';
 import { TimeAvailability } from '../components/SmartWorkoutPlan/TimeAvailability';
 import { EquipmentSelector } from '../components/SmartWorkoutPlan/EquipmentSelector';

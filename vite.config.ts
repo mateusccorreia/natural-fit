@@ -31,7 +31,6 @@ export default defineConfig({
         ]
       }
     })
-    })
   ],
-base: "/natural-fit/",
+  base: "/natural-fit/",
 })

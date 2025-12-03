@@ -1,5 +1,6 @@
 import { Zap, Shield, Trophy } from 'lucide-react';
-import { useSmartWorkout, type Level } from '../../context/SmartWorkoutContext';
+import { useSmartWorkout } from '../../context/SmartWorkoutContext';
+import type { Level } from '../../types/workout';
 import clsx from 'clsx';
 
 export function LevelSelector() {

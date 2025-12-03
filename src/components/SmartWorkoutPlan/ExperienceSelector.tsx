@@ -1,4 +1,3 @@
-import React from 'react';
 import { History, Award } from 'lucide-react';
 import { useSmartWorkout } from '../../context/SmartWorkoutContext';
 import { type ExperienceHistory } from '../../types/workout';

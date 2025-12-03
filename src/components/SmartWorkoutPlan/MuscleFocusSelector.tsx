@@ -1,5 +1,4 @@
-import React from 'react';
-import { Focus, Target } from 'lucide-react';
+import { Target } from 'lucide-react';
 import { useSmartWorkout } from '../../context/SmartWorkoutContext';
 import { type MuscleFocus } from '../../types/workout';
 import clsx from 'clsx';

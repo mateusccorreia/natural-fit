@@ -1,11 +1,10 @@
-import type { Anamnese, GeneratedWorkout, GeneratedDay, GeneratedExercise, GeneratedWeek } from '../types/workout';
+import type { Anamnese, GeneratedWorkout, GeneratedWeek } from '../types/workout';
 
 // --- 1. INTERFACES E TIPOS INTERNOS ---
 
 type Sexo = 'masculino' | 'feminino';
 type Objetivo = 'emagrecimento' | 'hipertrofia' | 'definicao' | 'resistencia' | 'saude' | 'forca';
 type Nivel = 'iniciante' | 'intermediario' | 'avancado';
-type Equipamento = 'academia' | 'casa' | 'elasticos' | 'halteres' | 'barbell' | 'dumbbell' | 'machine' | 'bodyweight' | 'cables' | 'casa_halteres' | 'peso_corpo';
 type FocoMuscular = 'peito' | 'costas' | 'pernas' | 'gluteos' | 'bracos' | 'ombros' | 'nenhum';
 
 interface UserInput {

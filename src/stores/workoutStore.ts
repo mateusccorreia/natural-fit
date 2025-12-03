@@ -20,9 +20,9 @@ export const useWorkoutStore = create<WorkoutState>()(
                     routineId,
                     date: new Date().toISOString(),
                     duration: 0,
-                    exercises: routine.exercises.map(e => ({
+                    exercises: (routine.sessions[0]?.exercises || []).map((e: any) => ({
                         ...e,
-                        sets: e.sets.map(s => ({ ...s, completed: false }))
+                        sets: typeof e.sets === 'string' ? [] : e.sets.map((s: any) => ({ ...s, completed: false }))
                     })),
                     completed: false,
                 };
@@ -49,7 +49,7 @@ export const useWorkoutStore = create<WorkoutState>()(
                     if (e.id !== exerciseId) return e;
                     return {
                         ...e,
-                        sets: e.sets.map(s => s.id === setId ? { ...s, ...data } : s)
+                        sets: (e.sets as any).map((s: any) => s.id === setId ? { ...s, ...data } : s)
                     };
                 });
 

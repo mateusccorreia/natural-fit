@@ -1,0 +1,22 @@
+src/components/SmartWorkoutPlan/EquipmentSelector.tsx(2,32): error TS2459: Module '"../../context/SmartWorkoutContext"' declares 'Equipment' locally, but it is not exported.
+src/components/SmartWorkoutPlan/ExperienceSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/InjuriesSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/LevelSelector.tsx(2,32): error TS2459: Module '"../../context/SmartWorkoutContext"' declares 'Level' locally, but it is not exported.
+src/components/SmartWorkoutPlan/LimitationsSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/MuscleFocusSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/MuscleFocusSelector.tsx(2,10): error TS6133: 'Focus' is declared but its value is never read.
+src/components/SmartWorkoutPlan/PreferencesSelector.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/SmartWorkoutPlan/WorkoutPreview.tsx(3,10): error TS6133: 'Clock' is declared but its value is never read.
+src/components/SmartWorkoutPlan/WorkoutPreview.tsx(4,1): error TS6133: 'ProgressionEngine' is declared but its value is never read.
+src/components/SmartWorkoutPlan/WorkoutPreview.tsx(5,1): error TS6133: 'DeloadSuggestion' is declared but its value is never read.
+src/pages/WorkoutGenerator.tsx(6,1): error TS6133: 'LevelSelector' is declared but its value is never read.
+src/stores/workoutStore.ts(23,40): error TS2339: Property 'exercises' does not exist on type 'WorkoutRoutine'.
+src/stores/workoutStore.ts(23,54): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/stores/workoutStore.ts(25,42): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/stores/workoutStore.ts(52,38): error TS2339: Property 'map' does not exist on type 'string | number'.
+  Property 'map' does not exist on type 'string'.
+src/stores/workoutStore.ts(52,42): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/utils/testGen.ts(4,7): error TS2739: Type '{ sexo: "masculino"; idade: number; peso: number; altura: number; objetivos: "hipertrofia"[]; frequenciaTreino: number; tempoPorTreino: number; localTreino: string; equipamentos: string[]; nivelExperiencia: "intermediario"; ... 4 more ...; preferencias: { ...; }; }' is missing the following properties from type 'Anamnese': isTraining, trainingDuration
+src/utils/workoutGenerator.ts(1,43): error TS6196: 'GeneratedDay' is declared but never used.
+src/utils/workoutGenerator.ts(1,57): error TS6196: 'GeneratedExercise' is declared but never used.
+src/utils/workoutGenerator.ts(8,6): error TS6196: 'Equipamento' is declared but never used.

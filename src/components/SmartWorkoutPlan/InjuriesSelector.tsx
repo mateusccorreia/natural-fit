@@ -1,4 +1,3 @@
-import React from 'react';
 import { Stethoscope, ShieldCheck } from 'lucide-react';
 import { useSmartWorkout } from '../../context/SmartWorkoutContext';
 import { type Injury } from '../../types/workout';
