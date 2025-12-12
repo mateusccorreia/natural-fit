@@ -40,6 +40,18 @@ export interface SmartWorkoutState {
   };
   isTraining: boolean;
   trainingDuration: number;
+  
+  // Advanced State
+  advanced: {
+    trainingCompanion: 'solo' | 'partner' | 'instructor';
+    excludedExercises: string[];
+    trainingStyle: 'machines' | 'free_weights' | 'mixed';
+    hatedExercises: string[];
+    technicalComfort: 'low' | 'medium' | 'high';
+    needsQuickWorkout: boolean;
+    sleepHours: number;
+    aestheticGoal: 'shredded' | 'strong' | 'athletic' | 'voluminous';
+  };
 }
 
 interface SmartWorkoutContextType extends SmartWorkoutState {
@@ -62,6 +74,8 @@ interface SmartWorkoutContextType extends SmartWorkoutState {
   togglePreferenceFocus: (focus: 'focoGluteos' | 'focoPeito') => void;
   setIsTraining: (isTraining: boolean) => void;
   setTrainingDuration: (months: number) => void;
+  // Advanced Setters
+  setAdvancedField: (field: keyof SmartWorkoutState['advanced'], value: any) => void;
 }
 
 const SmartWorkoutContext = createContext<SmartWorkoutContextType | undefined>(undefined);
@@ -107,6 +121,17 @@ export const SmartWorkoutProvider: React.FC<SmartWorkoutProviderProps> = ({ chil
   });
   const [isTraining, setIsTraining] = useState<boolean>(false);
   const [trainingDuration, setTrainingDuration] = useState<number>(0);
+
+  const [advanced, setAdvanced] = useState<SmartWorkoutState['advanced']>({
+    trainingCompanion: 'solo',
+    excludedExercises: [],
+    trainingStyle: 'mixed',
+    hatedExercises: [],
+    technicalComfort: 'medium',
+    needsQuickWorkout: false,
+    sleepHours: 7,
+    aestheticGoal: 'athletic'
+  });
 
   const toggleGoal = (goal: Goal) => {
     setGoals(prev => 
@@ -154,6 +179,13 @@ export const SmartWorkoutProvider: React.FC<SmartWorkoutProviderProps> = ({ chil
     }));
   };
 
+  const setAdvancedField = (field: keyof SmartWorkoutState['advanced'], value: any) => {
+    setAdvanced(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
   const generateWorkout = async () => {
     setIsGenerating(true);
 
@@ -177,7 +209,8 @@ export const SmartWorkoutProvider: React.FC<SmartWorkoutProviderProps> = ({ chil
       limitacoes: limitations,
       preferencias: preferences,
       isTraining: isTraining,
-      trainingDuration: trainingDuration
+      trainingDuration: trainingDuration,
+      ...advanced
     };
 
     const generatedRoutine = generateFitNowWorkout(anamnese);
@@ -229,7 +262,9 @@ export const SmartWorkoutProvider: React.FC<SmartWorkoutProviderProps> = ({ chil
         isTraining,
         setIsTraining,
         trainingDuration,
-        setTrainingDuration
+        setTrainingDuration,
+        advanced,
+        setAdvancedField
       }}
     >
       {children}

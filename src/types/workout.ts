@@ -109,6 +109,16 @@ export interface Anamnese {
     };
     isTraining: boolean;
     trainingDuration: number; // in months
+
+    // New Advanced Fields
+    trainingCompanion?: 'solo' | 'partner' | 'instructor';
+    excludedExercises?: string[];
+    trainingStyle?: 'machines' | 'free_weights' | 'mixed';
+    hatedExercises?: string[];
+    technicalComfort?: 'low' | 'medium' | 'high';
+    needsQuickWorkout?: boolean;
+    sleepHours?: number;
+    aestheticGoal?: 'shredded' | 'strong' | 'athletic' | 'voluminous';
 }
 
 export interface GeneratedExercise {
